@@ -1,0 +1,41 @@
+{
+    "sidemenu":{
+       "utilisateur":"Users",
+       "magasin"    : "Store creation",
+       "client"    : "Customer creation",
+       "facture"    : "Invoice payment",
+       "taux"    : "Rate modification",
+       "convention"    : "Invoices from contractors",
+       "fa"    : "Billing",
+       "proformat"    : "Proforma",
+       "bon"    : "Purchase order",
+       "fiche"    : "Card stock",
+       "listefa"    : "List of invoices",
+       "listeco"    : "Purchase order list",
+       "Rapportv"    : "Sales report",
+       "listepro"    : "List of proforma",
+       "negocie"    : "Negotiated invoice",
+       "categorie"    : "category",
+       "produitc"    : "Product",
+       "souscategorie"    : "Sub-category",
+       "bonl"    : "Delivery form",
+       "listebonl"    : "Delivery slip list",
+       "rapventeg"    : "Daily sales report",
+       "proadrap"    : "Proformat report",
+       "artsupadm"    : "Product management",
+       "bcdepot"    : "Order list",
+       "facnom"    : "Archive invoice ",
+       "supfac"    : "Delete invoice",
+       "detailcomm" : "Sale detail",
+       "modprix" : "Change the price of the product anywhere"
+    },
+    "setting":{
+        "rapport":"Report",
+        "comptoir"    : "Counter",
+        "admin"    : "Administration",
+        "depot"    : "Deposit management",
+        "produit"    : "Product management",
+        "langue"    : "Language",
+        "quiter"    : "log out"
+    }
+}

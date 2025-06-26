@@ -1,0 +1,42 @@
+{
+    "sidemenu":{
+       "utilisateur":"Utilisateurs",
+       "magasin"    : "Création de magasin",
+       "client"    : "Création de client",
+       "facture"    : "Paiement facture",
+       "taux"    : "Modification taux",
+       "convention"    : "Factures des conventionnés",
+       "fa"    : "Facturation",
+       "proformat"    : "Proformat",
+       "bon"    : "Bon de commande",
+       "fiche"    : "Fiche de stock",
+       "listefa"    : "Liste des facture",
+       "listeco"    : "Liste bon de commande",
+       "Rapportv"    : "Rapport de vente",
+       "listepro"    : "Liste des proformats",
+       "negocie"    : "Facture négociée",
+       "categorie"    : "Catégorie",
+       "produitc"    : "Produit",
+       "souscategorie"    : "Sous catégorie",
+       "bonl"    : "Bon de livraison",
+       "listebonl"    : "Liste bon de livraison",
+       "rapventeg"    : "Rapport de vente journalière",
+       "proadrap"    : "Rapport de proformat",
+       "artsupadm"    : "Gestion produit",
+       "bcdepot"    : "Liste de commande",
+       "facnom"    : "Archive facture",
+       "supfac"    : "Suppression facture", 
+       "detailcomm" : "Détail de vente",
+       "modprix" : "Modifier le prix du produit partout"
+       
+    },
+    "setting":{
+        "rapport":"Rapport",
+        "comptoir"    : "Comptoir",
+        "admin"    : "Administration",
+        "depot"    : "Gestion Dépot",
+        "produit"    : "Gestion Produit",
+        "langue"    : "Langue",
+        "quiter"    : "Quitter"
+    }
+}

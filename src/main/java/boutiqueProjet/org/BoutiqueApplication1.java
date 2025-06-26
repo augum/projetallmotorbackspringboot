@@ -21,6 +21,7 @@ public class BoutiqueApplication1 implements CommandLineRunner {
 		SpringApplication.run(BoutiqueApplication1.class, args);
 	}
 
+
 	@Override
 	public void run(String... args) throws Exception {
 		repositoryRestConfiguration.exposeIdsFor(Magasin.class);

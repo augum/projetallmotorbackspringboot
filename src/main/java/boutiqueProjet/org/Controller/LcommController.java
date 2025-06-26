@@ -88,8 +88,7 @@ public class LcommController {
 
 		return response;
 	}
-
-
+	
 	@GetMapping("/detailvente")
 	public List<Lcomm> getAllCommdetail(@RequestParam(name = "date1") String dateoString1,@RequestParam(name = "date2") String dateoString2 ) {
 		System.out.println("Get all Comms...");

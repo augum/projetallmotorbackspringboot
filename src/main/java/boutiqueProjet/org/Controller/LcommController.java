@@ -83,6 +83,9 @@ public class LcommController {
 			Map<String, Object> map = new HashMap<>();
 			map.put("libart", row[0]);
 			map.put("total", row[1]);
+			map.put("moyen", row[2]);
+			map.put("pa", row[3]);
+			map.put("marge",row[4]);
 			response.add(map);
 		}
 

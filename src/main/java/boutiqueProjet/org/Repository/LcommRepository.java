@@ -28,7 +28,7 @@ public interface LcommRepository extends JpaRepository<Lcomm, Long> {
     @Query("select c.Libart,SUM(c.qte) as total from Lcomm c Group by c.Libart")
     List<Object[]> listeArt();
 
-    @Query("select c.Libart, SUM(c.qte) as total from Lcomm c where c.date between :date1 and :date2 group by c.Libart")
+    @Query("select c.Libart, SUM(c.qte) as total,AVG(c.pu) as moyen,c.pa,(AVG(c.pu)-c.pa) as marge from Lcomm c where c.date between :date1 and :date2 group by c.Libart")
     List<Object[]> chercherCommD(@Param("date1") LocalDate date1, @Param("date2") LocalDate date2);
 
     @Query("select c from Lcomm c where c.idMagasin= :mag and c.date between :date1 and :date2  order by c.id desc ")

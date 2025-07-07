@@ -7,7 +7,7 @@
        "taux"    : "Rate modification",
        "convention"    : "Invoices from contractors",
        "fa"    : "Billing",
-       "proformat"    : "Proforma",
+       "proformat"    : "Customer invoice",
        "bon"    : "Purchase order",
        "fiche"    : "Card stock",
        "listefa"    : "List of invoices",

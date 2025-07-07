@@ -7,7 +7,7 @@
        "taux"    : "Modification taux",
        "convention"    : "Factures des conventionnés",
        "fa"    : "Facturation",
-       "proformat"    : "Proformat",
+       "proformat"    : "Facture client",
        "bon"    : "Bon de commande",
        "fiche"    : "Fiche de stock",
        "listefa"    : "Liste des facture",

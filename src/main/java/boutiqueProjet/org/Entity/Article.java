@@ -24,6 +24,7 @@ public class Article {
  private float pmin;
  private float pmax;
  private float pv;
+ private float pvd;
  private int tva;
  private int fodec;
  private int stock;
@@ -41,7 +42,7 @@ public class Article {
     public Article() {
     }
 
-    public Article(long id, String code, String codeA, String code_b, String libelle, float pa, float pmin, float pmax, float pv, int tva, int fodec, int stock, int stkinit, int stkajouter, String codeCateg, String codeScateg, Long idMagasin, boolean dispo, LocalDate cree, String local, Long expiration, float mb) {
+    public Article(long id, String code, String codeA, String code_b, String libelle, float pa, float pmin, float pmax, float pv,float pvd, int tva, int fodec, int stock, int stkinit, int stkajouter, String codeCateg, String codeScateg, Long idMagasin, boolean dispo, LocalDate cree, String local, Long expiration, float mb) {
         this.id = id;
         this.code = code;
         this.codeA = codeA;
@@ -51,6 +52,7 @@ public class Article {
         this.pmin = pmin;
         this.pmax = pmax;
         this.pv = pv;
+        this.pvd = pvd;
         this.tva = tva;
         this.fodec = fodec;
         this.stock = stock;
@@ -136,6 +138,13 @@ public class Article {
 
     public void setPv(float pv) {
         this.pv = pv;
+    }
+
+    public float getPvd() {
+        return pvd;
+    }
+    public void setPvd(float pvd) {
+        this.pvd = pvd;
     }
 
     public int getTva() {

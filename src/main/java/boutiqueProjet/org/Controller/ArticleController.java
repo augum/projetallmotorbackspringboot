@@ -117,6 +117,14 @@ public class ArticleController {
 		
          return repository.save(article);
      }
+    /*
+    * modifie tous les prix de vente
+    * en fonction de la modification du taux de change
+    * */
+	@PostMapping("/articletaux")
+	public void createTaux(@RequestBody int taux) {
+		// modification des prix de vente des articles par rapport au taux de change
+	}
 
 	 @GetMapping("/article/{id}")
 		public ResponseEntity<Article> getArticleById(@PathVariable(value = "id") Long Id)
@@ -160,7 +168,9 @@ public class ArticleController {
 	           article.setTva(Article.getTva());
 	           article.setStkinit(Article.getStkinit());
 	           article.setStock(Article.getStock());
+			   article.setFodec(Article.getFodec());
 	           article.setDispo(Article.isDispo());
+			   article.setPvd(Article.getPvd());
 			HistoriqueStock historie = new HistoriqueStock();
 			historie.setDate(LocalDate.now());
 			historie.setArticle(Article.getLibelle());

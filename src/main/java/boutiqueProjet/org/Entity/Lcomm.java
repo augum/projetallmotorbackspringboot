@@ -18,6 +18,7 @@ public class Lcomm {
     private double pu;
     private int qte;
     private int tva;
+    private double pa;
     private double totht;
     private double tottva;
     private double totttc;
@@ -33,7 +34,7 @@ public class Lcomm {
     public Lcomm() {
     }
 
-    public Lcomm(long id, String numero, String code_article, String libart, double pu, int qte, int tva, double totht, double tottva, double totttc, String local, String idMagasin, LocalDate date, String modePayement, String client, Comm comm) {
+    public Lcomm(long id, String numero, String code_article, String libart, double pu, int qte, int tva,double pa, double totht, double tottva, double totttc, String local, String idMagasin, LocalDate date, String modePayement, String client, Comm comm) {
         this.id = id;
         this.numero = numero;
         this.code_article = code_article;
@@ -41,6 +42,7 @@ public class Lcomm {
         this.pu = pu;
         this.qte = qte;
         this.tva = tva;
+        this.pa = pa;
         this.totht = totht;
         this.tottva = tottva;
         this.totttc = totttc;
@@ -106,6 +108,13 @@ public class Lcomm {
 
     public void setTva(int tva) {
         this.tva = tva;
+    }
+    public double getPa() {
+        return pa;
+    }
+
+    public void setPa(double pa) {
+        this.pa = pa;
     }
 
     public double getTotht() {

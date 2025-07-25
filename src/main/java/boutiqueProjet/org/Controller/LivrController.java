@@ -1,6 +1,5 @@
 package boutiqueProjet.org.Controller;
 
-import boutiqueProjet.org.Entity.Article;
 import boutiqueProjet.org.Entity.Compteur;
 import boutiqueProjet.org.Entity.Livr;
 import boutiqueProjet.org.Entity.Llivr;
@@ -10,7 +9,6 @@ import boutiqueProjet.org.Repository.CompteurRepository;
 import boutiqueProjet.org.Repository.LivrRepository;
 import boutiqueProjet.org.Repository.LlivrRepository;
 import com.fasterxml.jackson.databind.JsonMappingException;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.json.JsonParseException;
 import org.springframework.http.HttpStatus;
@@ -18,7 +16,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletContext;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -72,7 +69,7 @@ public class LivrController {
 	public ResponseEntity<Livr> createBs1016( @RequestBody Livr Livr)  throws JsonParseException, JsonMappingException , Exception{
 		  repository.save(Livr);
 		  List<Llivr> llivrs = Livr.getLcomms();
-		    for (Llivr lc : llivrs) {
+		    /*for (Llivr lc : llivrs) {
 	          	lc.setNumero(Livr.getNumero());
 	          	Optional<Article> ArticleInfo = articleRepository.findByCode(lc.getCode_article());
 	          	if(ArticleInfo.isPresent()){
@@ -81,7 +78,7 @@ public class LivrController {
 	          	    Art = articleRepository.save(Art);
                 }
 	          	repo.save(lc);
-		       }	 
+		       }	*/
 		    Optional<Compteur> CompteurInfo = comptrepo.findByAnnee(Livr.getAnnee());
 	     	/*if (CompteurInfo.isPresent()) {
 		    	Compteur compteur = CompteurInfo.get();

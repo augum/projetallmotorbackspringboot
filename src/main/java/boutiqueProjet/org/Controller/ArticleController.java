@@ -121,12 +121,30 @@ public class ArticleController {
     * modifie tous les prix de vente
     * en fonction de la modification du taux de change
     * */
-	@PostMapping("/articletaux")
-	public void createTaux(@RequestBody int taux) {
-		// modification des prix de vente des articles par rapport au taux de change
+	@PostMapping("/articletaux/{taux}")
+	public ResponseEntity<String> createTaux(@PathVariable(name = "taux") float taux) {
+		if (taux <= 0) {
+			return ResponseEntity.badRequest().body("Le taux doit être supérieur à zéro.");
+		}
+
+		List<Article> articles = repository.findAll();
+
+		for (Article art : articles) {
+			float nouveauPrix = art.getPvd() * taux;
+			art.setPv(nouveauPrix);
+			repository.save(art);
+		}
+
+		return ResponseEntity.ok("Prix des articles mis à jour avec succès.");
 	}
 
-	 @GetMapping("/article/{id}")
+
+
+
+
+
+
+	@GetMapping("/article/{id}")
 		public ResponseEntity<Article> getArticleById(@PathVariable(value = "id") Long Id)
 				throws ResourceNotFoundException {
 			Article Article = repository.findById(Id)
